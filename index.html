@@ -83,17 +83,14 @@ button {
   <script>
   
    {
-  var url = "https://ufreetv.com/playm3u8.html?https://streaming-live.rtp.pt/liverepeater/rtpn.smil/playlist.m3u8",
+  var url = "https://ufreetv.com/playm3u8.html?https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8",
 
  
 
 
   $iframe = $('#iframedemo');
 
-  $('#status').removeClass('green');
-  $iframe.load(function () {
-    $('#status').addClass('green');
-  }.bind(this));
+  
 
   $iframe.attr("src", url);
 }
@@ -101,17 +98,14 @@ button {
   
   
    {
-  var url = "https://anym3u8player.com/mp4-player/video-player.php?url=https://streaming-live.rtp.pt/liverepeater/rtpn.smil/playlist.m3u8",
+  var url = "https://anym3u8player.com/mp4-player/video-player.php?url=https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8",
 
  
 
 
   $iframe = $('#iframedemo2');
 
-  $('#status').removeClass('green');
-  $iframe.load(function () {
-    $('#status').addClass('green');
-  }.bind(this));
+  
 
   $iframe.attr("src", url);
 }
