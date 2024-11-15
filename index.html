@@ -41,7 +41,61 @@ iframe {
  img {
     width: 100%;
 }
+.stacked2.unrelatedChild2 {
+  width: 100%;
+  height: 87px;
+  background: black;
+  z-index: 2;
+  left: -106px;
+  position: relative;
+}
+.unrelatedChild2 {
+  margin: -80px 0 0 100px;
+    margin-right: 0px;
+  
+  text-align: center;
+  color: white;
+  margin-right: 10px;
+}
 
+.stacked.unrelatedChild {
+  width: 100%;
+  height: 87px;
+  background: #1c1c1c;
+  z-index: 2;
+  left: -106px;
+  position: relative;
+  top: 62px;
+}
+.unrelatedChild {
+  margin: -80px 0 0 100px;
+    margin-right: 0px;
+  margin-right: 0px;
+  border: 5px solid #1c1c1c;
+  text-align: center;
+  color: white;
+  margin-right: 10px;
+}
+
+.stacked3 {
+  width: 100%;
+  height: 100%;
+  background: #1c1c1c;
+  z-index: 2;
+  left: -89%;
+  position: absolute;
+  top: 57px;
+}
+
+.stacked4 {
+  width: 100%;
+  height: 100%;
+  background: #1c1c1c;
+  z-index: 2;
+  left: 89.5%;
+  position: absolute;
+  top: 57px;
+}
   
   </style>
 
@@ -53,6 +107,10 @@ iframe {
   </head>
 
 <body class="cover-bottom">
+ <div class="unrelatedChild stacked"><code>z-index: 2</code></div>
+  
+ <div class="stacked3"><code></code></div> 
+  
   <div class="top">
   <div class="wrapper">
     <iframe src="https://www.whatsuptv.app/play/DJfcps1l2a3s4hubp22l33u1wsL7sYuL9bup22l33u1wsj1JMFy5NFPIF5O98Vp22l33u1wsK1QcNK1yMSD099Vb2aesVGftnCfsFRaBzUou2VvLAPLiFYgbHnFeBX9bFSJ" width="640" height="480" frameborder="0" title="Funny Cat Videos For Kids" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
@@ -60,7 +118,8 @@ iframe {
     
     </div>
 </div>
-<span style="position: absolute; left: -20px; top: -15px; "><img src="https://www.zupimages.net/up/24/46/ftrs.png"></span>
+<div class="stacked4"><code></code></div>
+  <div class="unrelatedChild2 stacked2"><code></code></div>
   <script>
   function toggle() {
     document.querySelector('iframe').requestFullscreen();
