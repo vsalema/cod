@@ -101,7 +101,42 @@ iframe {
   position: absolute;
   top: 57px;
 }
-  
+  ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+
+#menu > li{
+	width:150px;
+	height:40px;
+	background: black;
+	float:left;
+	text-align: center;
+	line-height: 40px;
+  cursor:pointer;
+}
+
+#menu li ul a{
+	display: block;
+	width:150px;
+	height:40px;
+	background: black;
+	text-decoration: none;
+	color:white;
+}
+
+#menu li ul{
+	height: 0;
+	overflow: hidden;
+	transition:1s all;
+}
+
+
+#menu li:hover ul{
+	height: 120px;
+} 
   </style>
 
   <noscript>
@@ -123,7 +158,19 @@ iframe {
     
     </div>
 </div>
-<div class="stacked4"><code style="color: white;position: absolute;left: 2%;top: 40px;"><a href="https://vsalema.github.io/RTP-IPTV/" target="_self"><li>RTP 1</li></a><p><a href="https://vsalema.github.io/cod/" target="_self"><li>Movies</li></a></code></div>
+<div class="stacked4"><code style="color: white;position: absolute;left: 1%;top: 30px;"><nav>
+	<ul id="menu">
+		<li>Accueil
+			<ul>
+				<li><a href="https://vsalema.github.io/RTP-IPTV/">RTP1</a></li>
+				<li><a href="https://vsalema.github.io/cod/">Movies</a></li>
+				<li><a href="#">Design</a></li>
+			</ul>
+
+		</li>
+		
+	</ul>
+</nav></code></div>
   <div class="unrelatedChild2 stacked2"><code></code></div>
   <script>
   function toggle() {
